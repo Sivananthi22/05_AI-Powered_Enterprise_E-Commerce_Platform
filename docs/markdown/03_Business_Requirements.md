@@ -543,3 +543,18 @@ By integrating Artificial Intelligence with enterprise software engineering, the
 * and data-driven decision support.
 
 This project will serve as a modern enterprise solution capable of supporting future business growth.
+
+
+# References
+
+[1] Sommerville, I. (2016). Software Engineering (10th Edition). Pearson.
+
+[2] Pressman, R. S., & Maxim, B. R. (2020). Software Engineering: A Practitioner's Approach (9th Edition). McGraw-Hill.
+
+[3] Laudon, K. C., & Laudon, J. P. (2022). Management Information Systems: Managing the Digital Firm.
+
+[4] Turban, E., Pollard, C., & Wood, G. (2018). Information Technology for Management. Wiley.
+
+[5] ISO/IEC/IEEE 29148:2018 Systems and Software Engineering — Requirements Engineering.
+
+[6] Chaffey, D. (2022). Digital Business and E-Commerce Management. Pearson.
