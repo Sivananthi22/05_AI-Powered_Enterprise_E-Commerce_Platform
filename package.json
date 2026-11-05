@@ -10,6 +10,9 @@
     "test": "turbo run test",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "db:generate": "pnpm --filter @commerce/api prisma:generate",
+    "db:migrate": "pnpm --filter @commerce/api prisma:migrate",
+    "db:seed": "pnpm --filter @commerce/api prisma:seed",
     "prepare": "husky"
   },
   "devDependencies": {
