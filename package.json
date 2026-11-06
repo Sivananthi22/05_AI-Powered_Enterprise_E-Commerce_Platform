@@ -1,0 +1,51 @@
+{
+  "name": "enterprise-ecommerce-platform",
+  "private": true,
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,md,css}\" \"packages/**/*.{ts,tsx,js,jsx,json,md}\" README.md package.json pnpm-workspace.yaml turbo.json tsconfig.base.json eslint.config.mjs docker-compose.yml",
+    "format:check": "prettier --check \"apps/**/*.{ts,tsx,js,jsx,json,md,css}\" \"packages/**/*.{ts,tsx,js,jsx,json,md}\" README.md package.json pnpm-workspace.yaml turbo.json tsconfig.base.json eslint.config.mjs docker-compose.yml",
+    "db:generate": "pnpm --filter @commerce/api prisma:generate",
+    "db:migrate": "pnpm --filter @commerce/api prisma:migrate",
+    "db:seed": "pnpm --filter @commerce/api prisma:seed",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.27.0",
+    "globals": "^16.2.0",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.1",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "turbo": "^2.5.8",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.0",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md,yml,yaml}": ["prettier --write"]
+  }
+}
